@@ -1,0 +1,53 @@
+Arguments: 
+  /Users/harshbajpai/.nvm/versions/node/v18.17.1/bin/node /Users/harshbajpai/.nvm/versions/node/v18.17.1/bin/yarn build
+
+PATH: 
+  /Users/harshbajpai/.asdf/shims:/opt/homebrew/opt/asdf/libexec/bin:/opt/homebrew/opt/openjdk@11/bin:/Users/harshbajpai/.fuelup/bin:/Users/harshbajpai/.bun/bin:/Users/harshbajpai/.nvm/versions/node/v18.17.1/bin:/Users/harshbajpai/.local/bin:/opt/homebrew/Cellar/pyenv-virtualenv/1.2.1/shims:/Users/harshbajpai/.pyenv/shims:/Users/harshbajpai/.pyenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/usr/local/go/bin:/opt/homebrew/opt/openjdk@11/bin:/Users/harshbajpai/.fuelup/bin:/Users/harshbajpai/.bun/bin:/Users/harshbajpai/.nvm/versions/node/v18.17.1/bin:/Users/harshbajpai/.local/bin:/opt/homebrew/Cellar/pyenv-virtualenv/1.2.1/shims:/Users/harshbajpai/.pyenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/harshbajpai/.starkli/bin:/Users/harshbajpai/.cargo/bin:/Users/harshbajpai/.foundry/bin:/Users/harshbajpai/.cache/trunk/launcher
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/harshbajpai/Desktop/Projects/tmp/tipping/package.json: Unexpected token } in JSON at position 183
+      at JSON.parse (<anonymous>)
+      at /Users/harshbajpai/.nvm/versions/node/v18.17.1/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/harshbajpai/.nvm/versions/node/v18.17.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/harshbajpai/.nvm/versions/node/v18.17.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "tipping",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "./scripts/build.sh",
+      "deploy": "bun run scripts/deploy.ts",
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "bun-types": "latest"
+    },
+    "peerDependencies": {
+      "typescript": "^5.0.0"
+    },
+    "dependencies": {
+      "dotenv": "^16.4.1",
+      "starknet": "^5.24.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

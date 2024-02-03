@@ -1,0 +1,3 @@
+export const TIP_CLASS_HASH = "0x34baca8c74b606449deca73edce8aa28bffec0b24fec936c5efa0efbbd1287f"
+export const TIP_ADDRESS = "0x1cb1510bf9bdf9b6dd17a91efab7befc896c466fcb26e334deef1a4a9092967"
+export const ETH_ADDRESS = "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7";

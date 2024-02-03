@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"cd1msfdlbnuu6","package_name":"tipping","contract_name":"Tip","module_path":"tipping::contracts::tip::Tip","artifacts":{"sierra":"tipping_Tip.contract_class.json","casm":"tipping_Tip.compiled_contract_class.json"}}]}
