@@ -1,0 +1,3 @@
+[submodule "tipping-frame-frontend"]
+	path = tipping-frame-frontend
+	url = https://github.com/bajpai244/tipping-frame-frontend.git
