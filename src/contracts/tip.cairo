@@ -4,6 +4,7 @@ use starknet::ContractAddress;
 trait ITip<TContractState> {
     fn deposit(ref self: TContractState, fid: felt252, amount: u256);
     fn tip(ref self: TContractState, from_fid: felt252, to_fid: felt252, amount: u256);
+    fn withdraw(ref self: TContractState, fid: felt252, address: ContractAddress);
     fn get_balance(self: @TContractState, fid: felt252) -> u256;
     fn get_owner(self: @TContractState) -> ContractAddress;
 }
@@ -42,7 +43,8 @@ mod Tip {
             IERC20Dispatcher { contract_address: eth_address }
                 .transfer_from(caller_address, contract_address, amount);
 
-            self.balance.write(fid, amount);
+            let previous_balance = self.balance.read(fid);
+            self.balance.write(fid, previous_balance + amount);
         }
 
         fn tip(ref self: ContractState, from_fid: felt252, to_fid: felt252, amount: u256) {
@@ -55,6 +57,23 @@ mod Tip {
             let to_balance = self.balance.read(to_fid);
             self.balance.write(to_fid, to_balance + amount);
             self.balance.write(from_fid, from_balance - amount);
+        }
+
+        fn withdraw(ref self: ContractState, fid: felt252, address: ContractAddress) {
+            let caller_address = get_caller_address();
+            assert(caller_address == self.owner.read(), 'Only owner can withdraw');
+
+            let eth_address: ContractAddress =
+                0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7
+                .try_into()
+                .unwrap();
+
+            let amount = self.balance.read(fid);
+
+            IERC20Dispatcher { contract_address: eth_address }
+                .transfer(address, amount);
+
+            self.balance.write(fid, 0);
         }
 
         fn get_balance(self: @ContractState, fid: felt252) -> u256 {

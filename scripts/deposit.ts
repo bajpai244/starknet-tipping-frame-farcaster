@@ -6,13 +6,13 @@ const main = async () => {
     const account = getSenderAccount(provider);
     let contract = getContract(account);
 
-    const fId = 5;
+    const fId = 15355;
     const balance = await contract.get_balance(fId);
     console.log("balance is", balance);
 
     let call = contract.populate("deposit", {
         fid: fId,
-        amount: cairo.uint256(100)
+        amount: cairo.uint256(10000)
     });
 
     const response = await contract.deposit(call.calldata);
