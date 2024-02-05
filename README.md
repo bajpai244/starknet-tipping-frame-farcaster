@@ -31,6 +31,6 @@ Just put the farcaster username and select the amount! :)
 
 The codebase is provided in this repo, and before we go mainnet and allow people to deploy real Eth, we need to do improve the contracts to make them more safe! The repo will updated as soon as the frame is launched!
 
-*Upcoming Events:*
+**Upcoming Events:**
 - Improving UX: The hackathon was on Frames, and hence the service is built on tops of frames, but a bot will provide more ideal UX.
 - Mainnet: Launching this on Mainnet :)
