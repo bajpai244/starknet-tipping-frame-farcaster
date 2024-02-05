@@ -9,7 +9,7 @@ It allows u to send Eth directly to farcaster IDs, and allows withdrawal on mone
 You can tip people directly to farcaster, by just using their farcaster usernames!
 
 Here is a demo video:
-https://github.com/bajpai244/starknet-tipping-frame-farcaster/raw/main/video_2024-02-04_17-30-54.mp4
+https://twitter.com/bajpaiharsh244/status/1754113386718372349
 
 ## Wen Mainnet
 
