@@ -8,12 +8,24 @@ It allows u to send Eth directly to farcaster IDs, and allows withdrawal on mone
 
 You can tip people directly to farcaster, by just using their farcaster usernames!
 
-Here is a demo video:
+**Here is a demo video:**
 https://twitter.com/bajpaiharsh244/status/1754113386718372349
 
 ## Code Structure
 - Root Directory contains the contracts and the backend
 - tipping-frame-frontend is a submodule which contains the frame frontend and logic
+
+## Screenshots
+
+**Main Screen**
+<img width="664" alt="image" src="https://github.com/bajpai244/starknet-tipping-frame-farcaster/assets/41180869/ad22b51a-4a84-469c-b700-7eece6641095">
+
+**Checking Balance**
+<img width="644" alt="image" src="https://github.com/bajpai244/starknet-tipping-frame-farcaster/assets/41180869/22c654c9-3023-4bc9-9def-c91d22715c2f">
+
+**Tipping Eth**
+Just put the farcaster username and select the amount! :)
+<img width="649" alt="image" src="https://github.com/bajpai244/starknet-tipping-frame-farcaster/assets/41180869/0e23b447-3be5-497e-96d9-a2164707984c">
 
 ## Wen Mainnet
 
