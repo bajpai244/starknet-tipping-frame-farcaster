@@ -11,6 +11,10 @@ You can tip people directly to farcaster, by just using their farcaster username
 Here is a demo video:
 https://twitter.com/bajpaiharsh244/status/1754113386718372349
 
+## Code Structure
+- Root Directory contains the contracts and the backend
+- tipping-frame-frontend is a submodule which contains the frame frontend and logic
+
 ## Wen Mainnet
 
 The codebase is provided in this repo, and before we go mainnet and allow people to deploy real Eth, we need to do improve the contracts to make them more safe! The repo will updated as soon as the frame is launched!
