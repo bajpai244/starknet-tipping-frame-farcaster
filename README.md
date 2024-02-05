@@ -2,7 +2,9 @@
 
 OnlyTips is a payment service on top of Starknet, which is offered as a farcaster frame!
 
-It allows u to send Eth directly to farcaster IDs, and allows withdrawal on money on-chain!
+<img src="https://pbs.twimg.com/profile_banners/1580859458334375936/1684245497/1500x500" width="300px">
+
+It allows you to send Eth directly to farcaster IDs, and allows withdrawal on money on-chain!
 
 *The whole record of farcaster IDs and the money they are worth is recorded on-chain.*
 
